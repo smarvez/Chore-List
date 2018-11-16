@@ -1,0 +1,37 @@
+body {
+    margin: 20px;
+}
+
+header {
+    height: 50px;
+    background-color: #69696999;
+    text-align: center;
+    padding-top: 10px;
+}
+
+main {
+    visibility: visible;
+    position: relative;
+}
+
+#newForm{
+    visibility: hidden;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 75vw;
+}
+
+#editForm {
+    visibility: hidden;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 75vw;
+}
+
+.errorMessage .loadingMessage {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}

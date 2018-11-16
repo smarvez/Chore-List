@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Chore List</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>My Chores</header>
+        <main>
+            <div class="panel panel-default">
+                    <div class="panel-heading"></div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Title</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Priority</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+        
+                        </tbody>
+                    </table>
+                </div>
+                <form action="">
+                    <button class="btn btn-info" id="create" type="submit" value="submit">Create New</button>
+                    <button class="btn btn-warning" id="edit" type="submit" value="submit">Edit Chore</button>
+                    <button class="btn btn-danger" id="delete" type="submit" value="submit">Delete</button>
+                </form>
+            </div>
+            <form id="newForm">
+                <div class="form-group">
+                    <label>New Chore</label>
+                    <input type="text" class="form-control" id="newTitle" placeholder="Chore title ">
+                </div>
+                <div class="form-group">
+                    <label>Description</label>
+                    <textarea class="form-control" id="newDescription" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Priority</label>
+                    <select class="form-control" id="newPriority">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    </select>
+                </div>
+                <button id="createNew" class="btn btn-primary" type="submit">Submit</button>
+                <button class="btn btn-danger cancel" type="submit">Cancel</button>
+                </form>
+                <form id="editForm">
+                    <div class="form-group">
+                        <label>Edit Existing Chore</label>
+                        <input type="text" class="form-control" id="editTitle">
+                    </div>
+                    <div class="form-group">
+                        <label>Description</label>
+                        <input class="form-control" id="editDescription" rows="3">
+                    </div>
+                    <div class="form-group">
+                        <label>Priority</label>
+                        <select class="form-control" id="editPriority">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        </select>
+                    </div>
+                    <button id="newEdit" class="btn btn-success" type="submit">Submit Changes</button>
+                    <button class="btn btn-danger cancel" type="submit">Cancel</button>
+                </form>
+        </main>  
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+        <script type="text/javascript" src="main1.js" async defer></script>
+    </body>
+</html>
